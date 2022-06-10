@@ -3,9 +3,15 @@
   "displayName": "template-tools",
   "description": "Using template to build script",
   "version": "0.0.1",
+	"publisher": "choitangfei",
+	"license": "MIT",
   "engines": {
     "vscode": "^1.68.0"
   },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/choitangfei/template-tools.git"
+	},
   "categories": [
     "Other"
   ],
