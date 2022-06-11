@@ -2,9 +2,10 @@
   "name": "template-tools",
   "displayName": "template-tools",
   "description": "Using template to build script",
-  "version": "0.0.1",
+  "version": "1.0.1",
 	"publisher": "choitangfei",
 	"license": "MIT",
+	"icon": "res/logo.png",
   "engines": {
     "vscode": "^1.68.0"
   },
