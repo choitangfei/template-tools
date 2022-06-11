@@ -64,7 +64,11 @@ async function createStrFromTemplate(
 
   let result: string = templateStr;
 
+  const replacedVar: Set<string> = new Set();
+  
   for (const s of matchedStrArray) {
+    if(replacedVar.has(s)){ continue;}
+    
     if (s === "%FILENAME%") {
       result = result.replace(s, filename);
     } else {
@@ -78,7 +82,8 @@ async function createStrFromTemplate(
         return null;
       }
 
-      result = result.replace(s, input);
+      result = result.replaceAll(s, input);
+      replacedVar.add(s);
     }
   }
   return result;
